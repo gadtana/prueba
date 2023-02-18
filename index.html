@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<link href="file:///C|/Users/Usuario/Desktop/PRACTICA/style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="index.js" ></script>
+<title>Formulario</title>
+</head>
+
+<body><fieldset> <div>
+	<form class="form" name="formulario" id="formulario" onSubmit="verificarPassword(); return false">
+		<h1>Create Account</h1>
+	
+	<h3>Nombre</h3>
+		<input type="text"  name="nombre"  pattern="[A-Za-z]"required value=""/><br>
+	<h3>Email</h3>
+		<input type="email" name="e-correo" required value=""/><br>
+	<h3>Clave</h3>
+		<input type="password" name="clave" minlength="8" id="pass1" required value="" /><br>
+	<h3>Confirme su clave</h3>
+		<input type="password" name="clave" minlength="8" id="pass2" required value="" /><br>
+	
+	
+		<button type="submit" id="enviar" onclick="mostrarMensaje();">ENVIAR</button>
+		
+		</form></div></fieldset>
+	
+
+</body>
+</html>
